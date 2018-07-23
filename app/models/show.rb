@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
 
   def build_network(whatever)
     network_found = Network.find_by(whatever)
-
+    self.network_id = network_found.id
     #network_found.id = self.network_id
   end
 
