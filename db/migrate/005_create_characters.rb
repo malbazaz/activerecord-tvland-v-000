@@ -1,2 +1,3 @@
-class CreateCharacters < ActiveRecord::Migration 
-  
+class CreateCharacters < ActiveRecord::Migration
+
+  def change
