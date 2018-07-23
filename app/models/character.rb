@@ -2,7 +2,8 @@ class Character < ActiveRecord::Base
   belongs_to :actor
   belongs_to :show
 
-attr_accessor :catchphrase
-
+def catchphrase 
+  "#{self.name} always says: #{self.catchphrase}"
+end 
 
 end
