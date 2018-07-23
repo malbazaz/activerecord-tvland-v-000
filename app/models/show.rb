@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(whatever)
-    network_found = Network.find_by(whatever)
+    network_found = Network.create(whatever)
     self.network_id = network_found.id
 
   end
