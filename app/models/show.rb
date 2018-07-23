@@ -4,8 +4,8 @@ class Show < ActiveRecord::Base
 
   def build_network(:call_letters)
     network_found = Network.find_by(:call_letters)
-    network_found.id = self.network_id 
-  end 
-    
+    network_found.id = self.network_id
+  end
+
 
 end
